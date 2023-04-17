@@ -1,0 +1,22 @@
+{
+  "name": "cypressproject0",
+  "version": "1.0.0",
+  "description": "learning cypress",
+  "main": "index.js",
+  "scripts": {
+    "generate-reports": "npx cypress run --reporter mochawesome",
+    "merge-reports": "mochawesome-merge cypress/reports/*.json >  report1.json",
+    "generate-html-report": "marge report1.json --reportDir ./ --inline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.5.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.2"
+  }
+}

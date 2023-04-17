@@ -1,0 +1,12 @@
+{
+    "watchForFileChanges": false,
+    "defaultCommandTimeout" : 10000,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+    }
+}
